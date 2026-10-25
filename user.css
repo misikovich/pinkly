@@ -30,10 +30,13 @@
   --pinkly-branch: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='100' viewBox='0 0 300 100'><defs><path id='p' d='M0 9C-6 4-7-4-3-9L0-6L3-9C7-4 6 4 0 9Z'/><g id='c'><use href='%23p' transform='rotate(0) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(72) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(144) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(216) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(288) translate(0 -8) scale(.85)'/><circle r='2.6' fill='%23ff5fa2'/></g></defs><path d='M-4 14C60 22 110 14 160 30C200 42 240 36 296 47' fill='none' stroke='%23a0697d' stroke-linecap='round' stroke-width='4.5'/><path d='M70 20C84 34 92 44 110 52M150 28C160 20 170 18 184 18M220 39C228 52 238 62 252 66' fill='none' stroke='%23a0697d' stroke-linecap='round' stroke-width='2.4'/><use href='%23c' fill='%23ffc2dc' transform='translate(36 19) scale(1)'/><use href='%23c' fill='%23ffffff' transform='translate(78 24) scale(0.8)'/><use href='%23c' fill='%23ffb3d1' transform='translate(108 52) scale(1.1)'/><use href='%23c' fill='%23ffffff' transform='translate(154 28) scale(0.9)'/><use href='%23c' fill='%23ffc2dc' transform='translate(184 18) scale(0.8)'/><use href='%23c' fill='%23ffb3d1' transform='translate(218 40) scale(1)'/><use href='%23c' fill='%23ffffff' transform='translate(250 66) scale(1.1)'/><use href='%23c' fill='%23ffc2dc' transform='translate(282 47) scale(0.8)'/><ellipse cx='126' cy='22' rx='2.6' ry='3.6' fill='%23ff8fc0'/><ellipse cx='240' cy='32' rx='2.6' ry='3.6' fill='%23ff8fc0'/><ellipse cx='58' cy='28' rx='2.6' ry='3.6' fill='%23ff8fc0'/><ellipse cx='196' cy='44' rx='2.6' ry='3.6' fill='%23ff8fc0'/></svg>");
   --pinkly-branch-flip: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='100' viewBox='0 0 300 100'><defs><path id='p' d='M0 9C-6 4-7-4-3-9L0-6L3-9C7-4 6 4 0 9Z'/><g id='c'><use href='%23p' transform='rotate(0) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(72) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(144) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(216) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(288) translate(0 -8) scale(.85)'/><circle r='2.6' fill='%23ff5fa2'/></g></defs><g transform='translate(300 0) scale(-1 1)'><path d='M-4 14C60 22 110 14 160 30C200 42 240 36 296 47' fill='none' stroke='%23a0697d' stroke-linecap='round' stroke-width='4.5'/><path d='M70 20C84 34 92 44 110 52M150 28C160 20 170 18 184 18M220 39C228 52 238 62 252 66' fill='none' stroke='%23a0697d' stroke-linecap='round' stroke-width='2.4'/><use href='%23c' fill='%23ffc2dc' transform='translate(36 19) scale(1)'/><use href='%23c' fill='%23ffffff' transform='translate(78 24) scale(0.8)'/><use href='%23c' fill='%23ffb3d1' transform='translate(108 52) scale(1.1)'/><use href='%23c' fill='%23ffffff' transform='translate(154 28) scale(0.9)'/><use href='%23c' fill='%23ffc2dc' transform='translate(184 18) scale(0.8)'/><use href='%23c' fill='%23ffb3d1' transform='translate(218 40) scale(1)'/><use href='%23c' fill='%23ffffff' transform='translate(250 66) scale(1.1)'/><use href='%23c' fill='%23ffc2dc' transform='translate(282 47) scale(0.8)'/><ellipse cx='126' cy='22' rx='2.6' ry='3.6' fill='%23ff8fc0'/><ellipse cx='240' cy='32' rx='2.6' ry='3.6' fill='%23ff8fc0'/><ellipse cx='58' cy='28' rx='2.6' ry='3.6' fill='%23ff8fc0'/><ellipse cx='196' cy='44' rx='2.6' ry='3.6' fill='%23ff8fc0'/></g></svg>");
 
-  /* Two flower-fall layers; petals sway and tumble via SMIL while CSS moves
-     each layer down by exactly one tile so the loop is seamless. */
-  --pinkly-fall-near: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='340' height='340' viewBox='0 0 340 340'><defs><path id='p' d='M0 9C-6 4-7-4-3-9L0-6L3-9C7-4 6 4 0 9Z'/><g id='c'><use href='%23p' transform='rotate(0) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(72) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(144) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(216) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(288) translate(0 -8) scale(.85)'/><circle r='2.6' fill='%23ff5fa2'/></g></defs><g transform='translate(40 50)' opacity='1'><g><animateTransform attributeName='transform' type='translate' values='0 0;14 0;0 0' dur='4s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='0;360' dur='5.2s' repeatCount='indefinite'/><use href='%23p' fill='%23ffb3d1' transform='scale(1.1)'/></g></g></g><g transform='translate(210 36)' opacity='1'><g><animateTransform attributeName='transform' type='translate' values='0 0;-12 0;0 0' dur='5s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='0;-360' dur='6.5s' repeatCount='indefinite'/><use href='%23c' fill='%23ffc2dc' transform='scale(0.9)'/></g></g></g><g transform='translate(300 150)' opacity='1'><g><animateTransform attributeName='transform' type='translate' values='0 0;16 0;0 0' dur='3.6s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='0;-360' dur='4.7s' repeatCount='indefinite'/><use href='%23p' fill='%23ff8fc0' transform='scale(0.9)'/></g></g></g><g transform='translate(120 200)' opacity='1'><g><animateTransform attributeName='transform' type='translate' values='0 0;-14 0;0 0' dur='4.4s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='0;360' dur='5.7s' repeatCount='indefinite'/><use href='%23p' fill='%23ffffff' transform='scale(1.0)'/></g></g></g><g transform='translate(60 300)' opacity='1'><g><animateTransform attributeName='transform' type='translate' values='0 0;12 0;0 0' dur='5.2s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='0;360' dur='6.8s' repeatCount='indefinite'/><use href='%23c' fill='%23ffffff' transform='scale(0.75)'/></g></g></g><g transform='translate(250 290)' opacity='1'><g><animateTransform attributeName='transform' type='translate' values='0 0;-16 0;0 0' dur='3.8s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='0;-360' dur='4.9s' repeatCount='indefinite'/><use href='%23p' fill='%23ffd3e5' transform='scale(1.2)'/></g></g></g><g transform='translate(180 120)' opacity='1'><g><animateTransform attributeName='transform' type='translate' values='0 0;10 0;0 0' dur='4.8s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='0;360' dur='6.2s' repeatCount='indefinite'/><use href='%23p' fill='%23ff6fae' transform='scale(0.7)'/></g></g></g></svg>");
-  --pinkly-fall-far: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260' viewBox='0 0 260 260'><defs><path id='p' d='M0 9C-6 4-7-4-3-9L0-6L3-9C7-4 6 4 0 9Z'/><g id='c'><use href='%23p' transform='rotate(0) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(72) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(144) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(216) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(288) translate(0 -8) scale(.85)'/><circle r='2.6' fill='%23ff5fa2'/></g></defs><g transform='translate(30 40)' opacity='0.7'><g><animateTransform attributeName='transform' type='translate' values='0 0;8 0;0 0' dur='5s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='0;360' dur='6.5s' repeatCount='indefinite'/><use href='%23p' fill='%23ffc2dc' transform='scale(0.6)'/></g></g></g><g transform='translate(170 90)' opacity='0.7'><g><animateTransform attributeName='transform' type='translate' values='0 0;-8 0;0 0' dur='5.6s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='0;-360' dur='7.3s' repeatCount='indefinite'/><use href='%23p' fill='%23ffffff' transform='scale(0.55)'/></g></g></g><g transform='translate(90 190)' opacity='0.7'><g><animateTransform attributeName='transform' type='translate' values='0 0;8 0;0 0' dur='6s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='0;360' dur='7.8s' repeatCount='indefinite'/><use href='%23c' fill='%23ffb3d1' transform='scale(0.5)'/></g></g></g><g transform='translate(230 220)' opacity='0.7'><g><animateTransform attributeName='transform' type='translate' values='0 0;8 0;0 0' dur='4.6s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='0;-360' dur='6.0s' repeatCount='indefinite'/><use href='%23p' fill='%23ff8fc0' transform='scale(0.5)'/></g></g></g></svg>");
+  /* Flower-fall: two layers, each stacking two differently sized tiles of
+     randomly placed petals. Petals sway, drift and tumble via SMIL; CSS moves
+     each layer down by a common multiple of its tile heights. */
+  --pinkly-fall-a: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='430' height='510' viewBox='0 0 430 510'><defs><path id='p' d='M0 9C-6 4-7-4-3-9L0-6L3-9C7-4 6 4 0 9Z'/><g id='c'><use href='%23p' transform='rotate(0) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(72) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(144) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(216) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(288) translate(0 -8) scale(.85)'/><circle r='2.6' fill='%23ff5fa2'/></g></defs><g transform='translate(257 234)'><g><animateTransform attributeName='transform' type='translate' values='0 0;11 11;0 22;-4 11;0 0' dur='4.1s' begin='-1.3s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='304;-56' dur='3.5s' begin='-1.4s' repeatCount='indefinite'/><use href='%23p' fill='%23ffb3d1' transform='scale(1.19)'/></g></g></g><g transform='translate(155 140)'><g><animateTransform attributeName='transform' type='translate' values='0 0;18 7;0 13;-6 7;0 0' dur='4.6s' begin='-1.5s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='68;428' dur='5.3s' begin='-5.1s' repeatCount='indefinite'/><use href='%23p' fill='%23ffc2dc' transform='scale(1.01)'/></g></g></g><g transform='translate(386 408)'><g><animateTransform attributeName='transform' type='translate' values='0 0;-12 9;0 18;4 9;0 0' dur='5.9s' begin='-0.4s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='188;548' dur='7.3s' begin='-3.9s' repeatCount='indefinite'/><use href='%23p' fill='%23ffffff' transform='scale(0.98)'/></g></g></g><g transform='translate(76 249)'><g><animateTransform attributeName='transform' type='translate' values='0 0;-15 10;0 19;5 10;0 0' dur='5.0s' begin='-4.1s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='93;453' dur='6.4s' begin='-4.4s' repeatCount='indefinite'/><use href='%23p' fill='%23ffc2dc' transform='scale(0.93)'/></g></g></g><g transform='translate(239 360)'><g><animateTransform attributeName='transform' type='translate' values='0 0;-14 8;0 16;5 8;0 0' dur='6.7s' begin='-6.4s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='247;-113' dur='3.0s' begin='-1.5s' repeatCount='indefinite'/><use href='%23p' fill='%23ff6fae' transform='scale(1.13)'/></g></g></g><g transform='translate(82 395)'><g><animateTransform attributeName='transform' type='translate' values='0 0;-18 9;0 18;6 9;0 0' dur='6.4s' begin='-5.8s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='106;466' dur='4.0s' begin='-3.4s' repeatCount='indefinite'/><use href='%23c' fill='%23ffd3e5' transform='scale(0.92)'/></g></g></g></svg>");
+  --pinkly-fall-b: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='370' height='340' viewBox='0 0 370 340'><defs><path id='p' d='M0 9C-6 4-7-4-3-9L0-6L3-9C7-4 6 4 0 9Z'/><g id='c'><use href='%23p' transform='rotate(0) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(72) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(144) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(216) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(288) translate(0 -8) scale(.85)'/><circle r='2.6' fill='%23ff5fa2'/></g></defs><g transform='translate(231 230)'><g><animateTransform attributeName='transform' type='translate' values='0 0;13 7;0 14;-4 7;0 0' dur='8.4s' begin='-5.7s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='277;-83' dur='5.7s' begin='-3.3s' repeatCount='indefinite'/><use href='%23p' fill='%23ff6fae' transform='scale(1.04)'/></g></g></g><g transform='translate(145 148)'><g><animateTransform attributeName='transform' type='translate' values='0 0;-12 7;0 14;4 7;0 0' dur='8.3s' begin='-5.8s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='162;522' dur='6.4s' begin='-0.1s' repeatCount='indefinite'/><use href='%23p' fill='%23ff6fae' transform='scale(0.92)'/></g></g></g><g transform='translate(264 54)'><g><animateTransform attributeName='transform' type='translate' values='0 0;-14 9;0 17;5 9;0 0' dur='4.6s' begin='-4.5s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='67;427' dur='7.1s' begin='-0.2s' repeatCount='indefinite'/><use href='%23c' fill='%23ff6fae' transform='scale(0.84)'/></g></g></g><g transform='translate(141 46)'><g><animateTransform attributeName='transform' type='translate' values='0 0;-13 7;0 13;4 7;0 0' dur='5.0s' begin='-3.3s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='214;-146' dur='3.3s' begin='-0.2s' repeatCount='indefinite'/><use href='%23p' fill='%23ffc2dc' transform='scale(0.96)'/></g></g></g></svg>");
+  --pinkly-fall-c: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='310' height='390' viewBox='0 0 310 390'><defs><path id='p' d='M0 9C-6 4-7-4-3-9L0-6L3-9C7-4 6 4 0 9Z'/><g id='c'><use href='%23p' transform='rotate(0) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(72) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(144) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(216) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(288) translate(0 -8) scale(.85)'/><circle r='2.6' fill='%23ff5fa2'/></g></defs><g transform='translate(69 312)' opacity='0.69'><g><animateTransform attributeName='transform' type='translate' values='0 0;15 10;0 21;-5 10;0 0' dur='8.3s' begin='-3.4s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='283;643' dur='3.9s' begin='-3.0s' repeatCount='indefinite'/><use href='%23p' fill='%23ffd3e5' transform='scale(0.60)'/></g></g></g><g transform='translate(177 171)' opacity='0.62'><g><animateTransform attributeName='transform' type='translate' values='0 0;12 7;0 14;-4 7;0 0' dur='6.8s' begin='-3.9s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='79;-281' dur='5.8s' begin='-2.5s' repeatCount='indefinite'/><use href='%23p' fill='%23ffb3d1' transform='scale(0.53)'/></g></g></g><g transform='translate(80 43)' opacity='0.78'><g><animateTransform attributeName='transform' type='translate' values='0 0;15 11;0 22;-5 11;0 0' dur='4.9s' begin='-1.5s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='345;705' dur='5.4s' begin='-2.9s' repeatCount='indefinite'/><use href='%23p' fill='%23ff6fae' transform='scale(0.51)'/></g></g></g><g transform='translate(202 41)' opacity='0.60'><g><animateTransform attributeName='transform' type='translate' values='0 0;14 7;0 14;-5 7;0 0' dur='7.2s' begin='-5.6s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='66;-294' dur='3.6s' begin='-0.9s' repeatCount='indefinite'/><use href='%23c' fill='%23ffb3d1' transform='scale(0.46)'/></g></g></g></svg>");
+  --pinkly-fall-d: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='350' height='260' viewBox='0 0 350 260'><defs><path id='p' d='M0 9C-6 4-7-4-3-9L0-6L3-9C7-4 6 4 0 9Z'/><g id='c'><use href='%23p' transform='rotate(0) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(72) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(144) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(216) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(288) translate(0 -8) scale(.85)'/><circle r='2.6' fill='%23ff5fa2'/></g></defs><g transform='translate(285 75)' opacity='0.72'><g><animateTransform attributeName='transform' type='translate' values='0 0;12 8;0 17;-4 8;0 0' dur='4.2s' begin='-1.6s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='85;-275' dur='3.1s' begin='-0.1s' repeatCount='indefinite'/><use href='%23c' fill='%23ffb3d1' transform='scale(0.45)'/></g></g></g><g transform='translate(194 197)' opacity='0.59'><g><animateTransform attributeName='transform' type='translate' values='0 0;-11 7;0 14;4 7;0 0' dur='8.6s' begin='-3.1s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='95;455' dur='5.4s' begin='-5.1s' repeatCount='indefinite'/><use href='%23c' fill='%23ffd3e5' transform='scale(0.49)'/></g></g></g><g transform='translate(185 67)' opacity='0.64'><g><animateTransform attributeName='transform' type='translate' values='0 0;14 6;0 11;-5 6;0 0' dur='7.7s' begin='-6.5s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='273;633' dur='6.4s' begin='-1.6s' repeatCount='indefinite'/><use href='%23p' fill='%23ffc2dc' transform='scale(0.51)'/></g></g></g></svg>");
   --pinkly-flowerfall-opacity: 0.9; /* Set to 0 to hide the flower-fall. */
 
   /* Ribbon-like satin stripes for progress fills. */
@@ -90,28 +93,32 @@ body::after {
 }
 
 body::before {
-  top: -340px;
+  top: -1020px;
   bottom: 0;
-  background: var(--pinkly-fall-near) 0 0 / 340px 340px;
-  animation: pinkly-fall-near 9s linear infinite;
+  background:
+    var(--pinkly-fall-a) 0 0 / 430px 510px,
+    var(--pinkly-fall-b) 160px 120px / 370px 340px;
+  animation: pinkly-fall-near 27s linear infinite;
 }
 
 body::after {
-  top: -260px;
+  top: -780px;
   bottom: 0;
-  background: var(--pinkly-fall-far) 90px 40px / 260px 260px;
-  animation: pinkly-fall-far 12s linear infinite;
+  background:
+    var(--pinkly-fall-c) 90px 40px / 310px 390px,
+    var(--pinkly-fall-d) 230px 170px / 350px 260px;
+  animation: pinkly-fall-far 36s linear infinite;
 }
 
 @keyframes pinkly-fall-near {
   to {
-    transform: translateY(340px);
+    transform: translateY(1020px);
   }
 }
 
 @keyframes pinkly-fall-far {
   to {
-    transform: translateY(260px);
+    transform: translateY(780px);
   }
 }
 
@@ -436,6 +443,86 @@ body::after {
     rgba(var(--spice-rgb-main), 0.75) 25%,
     var(--spice-main) 89%
   ) !important;
+}
+
+/* Spotify's dark-theme scrims on Home turn grey on a pink palette. Swap them
+   for soft pink tints. The header color is set inline, hence !important. */
+.main-home-homeHeader {
+  background-color: transparent !important;
+  background-image: linear-gradient(
+    rgba(var(--spice-rgb-button), 0.16) 0%,
+    transparent 100%
+  ) !important;
+}
+
+.main-home-filterChipsSection {
+  background-color: rgba(var(--spice-rgb-main), 0.85) !important;
+  backdrop-filter: blur(8px);
+}
+
+.main-home-filterChipsSection::after {
+  background: transparent !important;
+}
+
+/* Edge fades on scrollable shelves. */
+.search-searchCategory-contentArea::before {
+  background-image: linear-gradient(
+    90deg,
+    rgba(var(--spice-rgb-main), 0.85) 0%,
+    transparent 100%
+  ) !important;
+}
+
+.search-searchCategory-contentArea::after {
+  background-image: linear-gradient(
+    -90deg,
+    rgba(var(--spice-rgb-main), 0.85) 0%,
+    transparent 100%
+  ) !important;
+}
+
+.search-searchCategory-carouselButton {
+  background-color: rgba(var(--spice-rgb-button), 0.18);
+}
+
+[data-testid="home-ad-card"] > div {
+  background-color: rgba(var(--spice-rgb-button), 0.08);
+}
+
+/* Home shortcut tiles (Liked Songs, recent playlists). */
+.view-homeShortcutsGrid-shortcut {
+  background-color: rgba(var(--spice-rgb-card-top), 0.6);
+  box-shadow: 0 0 0 1px rgba(var(--spice-rgb-button), 0.12);
+}
+
+.view-homeShortcutsGrid-shortcut:hover {
+  background-color: var(--spice-highlight);
+}
+
+/* Spotify's black drop shadows read as grey smudges on pink. */
+.main-nowPlayingView-headerContainer {
+  box-shadow: 0 6px 12px -6px rgba(var(--spice-rgb-shadow), 0.7) !important;
+}
+
+.x-entityImage-imageContainer,
+.cover-art {
+  box-shadow: 0 4px 14px rgba(var(--spice-rgb-shadow), 0.55) !important;
+}
+
+/* Headings on the lyrics card and the artist photo sit on album/artist
+   colors, not on the theme's pink, so keep them light and legible. */
+[data-testid="lyrics-npv-section"] .main-nowPlayingView-sectionHeader,
+[data-testid="lyrics-npv-section"] .main-nowPlayingView-sectionHeader *,
+.main-nowPlayingView-aboutArtist
+  [style*="background-image"]
+  .main-nowPlayingView-sectionHeader,
+.main-nowPlayingView-aboutArtist
+  [style*="background-image"]
+  .main-nowPlayingView-sectionHeader
+  * {
+  color: #ffffff !important;
+  fill: #ffffff;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.45);
 }
 
 /* Headings get a soft pink glow. */
