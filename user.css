@@ -1,0 +1,483 @@
+/*
+ * Pinkly — pastel pink, flowers, ribbons, butterflies and a lot of shine.
+ * Edit this file and color.ini while the desktop watcher is running.
+ * Spotify's class names can change between releases; inspect the DOM before
+ * adding selectors. All decorations are CSS-only inline SVGs, so the theme
+ * needs no extra asset files.
+ */
+
+:root {
+  --pinkly-panel-radius: 20px;
+  --pinkly-control-radius: 14px;
+  --pinkly-hot: #ff4f9a;
+  --pinkly-candy: #ff8fc0;
+  --pinkly-glow:
+    0 0 0 1px rgba(255, 79, 154, 0.18), 0 8px 24px rgba(233, 106, 165, 0.28);
+
+  /* Tiled glitter: white four-point sparkles and tiny pink dots. */
+  --pinkly-sparkles: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><defs><path id='s' d='M0-10C1-3 3-1 10 0C3 1 1 3 0 10C-1 3-3 1-10 0C-3-1-1-3 0-10Z'/></defs><g fill='%23ffffff'><use href='%23s' transform='translate(24 30) scale(.9)' opacity='.9'/><use href='%23s' transform='translate(112 18) scale(.5)' opacity='.8'/><use href='%23s' transform='translate(78 92) scale(1.15)'/><use href='%23s' transform='translate(140 124) scale(.6)' opacity='.85'/><use href='%23s' transform='translate(30 134) scale(.45)'/></g><g fill='%23ff8fc0'><circle cx='60' cy='52' r='1.6'/><circle cx='132' cy='70' r='1.2'/><circle cx='12' cy='88' r='1.4'/><circle cx='98' cy='150' r='1.5'/></g><g fill='%23ffb3d1' opacity='.55'><path transform='translate(52 104) rotate(30) scale(.7)' d='M0 9C-6 4-7-4-3-9L0-6L3-9C7-4 6 4 0 9Z'/><path transform='translate(128 32) rotate(-40) scale(.6)' d='M0 9C-6 4-7-4-3-9L0-6L3-9C7-4 6 4 0 9Z'/><path transform='translate(120 112) rotate(110) scale(.5)' d='M0 9C-6 4-7-4-3-9L0-6L3-9C7-4 6 4 0 9Z'/></g></svg>");
+
+  /* A bouquet of roses, daisies, tulips, cherry blossoms and buds. */
+  --pinkly-bouquet: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 260 220'><defs><g id='f'><g><ellipse cy='-9' rx='6.5' ry='9.5'/><ellipse cy='-9' rx='6.5' ry='9.5' transform='rotate(72)'/><ellipse cy='-9' rx='6.5' ry='9.5' transform='rotate(144)'/><ellipse cy='-9' rx='6.5' ry='9.5' transform='rotate(216)'/><ellipse cy='-9' rx='6.5' ry='9.5' transform='rotate(288)'/></g><circle r='4.6' fill='%23ffd76e'/><circle r='2' fill='%23fff3c4'/></g><g id='d'><g><ellipse cy='-9' rx='2.6' ry='8.5' transform='rotate(0)'/><ellipse cy='-9' rx='2.6' ry='8.5' transform='rotate(30)'/><ellipse cy='-9' rx='2.6' ry='8.5' transform='rotate(60)'/><ellipse cy='-9' rx='2.6' ry='8.5' transform='rotate(90)'/><ellipse cy='-9' rx='2.6' ry='8.5' transform='rotate(120)'/><ellipse cy='-9' rx='2.6' ry='8.5' transform='rotate(150)'/><ellipse cy='-9' rx='2.6' ry='8.5' transform='rotate(180)'/><ellipse cy='-9' rx='2.6' ry='8.5' transform='rotate(210)'/><ellipse cy='-9' rx='2.6' ry='8.5' transform='rotate(240)'/><ellipse cy='-9' rx='2.6' ry='8.5' transform='rotate(270)'/><ellipse cy='-9' rx='2.6' ry='8.5' transform='rotate(300)'/><ellipse cy='-9' rx='2.6' ry='8.5' transform='rotate(330)'/></g><circle r='4.2' fill='%23ffcf4d'/></g><g id='r'><circle r='7.5'/><circle cx='0.0' cy='-5.0' r='5.6'/><circle cx='4.3' cy='-2.5' r='5.6'/><circle cx='4.3' cy='2.5' r='5.6'/><circle cx='0.0' cy='5.0' r='5.6'/><circle cx='-4.3' cy='2.5' r='5.6'/><circle cx='-4.3' cy='-2.5' r='5.6'/><g fill='%23d63f86' opacity='.45'><path d='M-10 1C-8 9 8 9 10 1C6 6-6 6-10 1Z'/><path d='M-9-3C-9-9-1-11 4-9C-2-8-6-6-9-3Z'/><path d='M9-5C9 1 5 4 1 4C5 2 7-1 9-5Z'/></g><path d='M-6 2C-7-4-2-7 3-6C7-5 7 1 4 3C1 5-4 5-6 2Z' fill='%23ffffff' opacity='.2'/><circle r='4.4' fill='%23e04a8c'/><path d='M-4.4 0C-3-3.5 3-3.5 4.4 0C2-1.6-2-1.6-4.4 0Z' fill='%23ffffff' opacity='.5'/><path d='M-2.2 1.4C-.6 3 2 2.6 2.6.4' fill='none' stroke='%23ffffff' stroke-width='.9' stroke-linecap='round' opacity='.55'/><ellipse cx='-5' cy='-5' rx='2.6' ry='1.3' fill='%23ffffff' opacity='.55' transform='rotate(-35 -5 -5)'/></g><g id='t'><path d='M-8-4C-9 7 9 7 8-4L5-12L2-7L0-13L-2-7L-5-12Z'/><path d='M-4-3C-4 3 0 4 1 4' fill='none' stroke='%23ffffff' stroke-width='1.2' stroke-linecap='round' opacity='.6'/></g><path id='cp' d='M0 0C-6-4-7-12-3-15L0-12L3-15C7-12 6-4 0 0Z'/><g id='c'><use href='%23cp' transform='rotate(0)'/><use href='%23cp' transform='rotate(72)'/><use href='%23cp' transform='rotate(144)'/><use href='%23cp' transform='rotate(216)'/><use href='%23cp' transform='rotate(288)'/><circle r='2.6' fill='%23ff5fa2'/><g fill='%23ff5fa2'><circle cx='0' cy='-6' r='.9'/><circle cx='5' cy='-2' r='.9'/><circle cx='-5' cy='-2' r='.9'/><circle cx='3' cy='5' r='.9'/><circle cx='-3' cy='5' r='.9'/></g></g><g id='b'><ellipse cy='-4' rx='3.4' ry='5'/><path d='M0 1C-4 0-5-3-4-5C-2-2 0-1 0 1ZM0 1C4 0 5-3 4-5C2-2 0-1 0 1Z' fill='%2390cfa0'/></g><path id='l' d='M0 0C6-10 18-12 26-8C18-2 8 4 0 0Z'/><path id='s' d='M0-10C1-3 3-1 10 0C3 1 1 3 0 10C-1 3-3 1-10 0C-3-1-1-3 0-10Z'/></defs><g fill='%23a8dcb0' opacity='.9'><use href='%23l' transform='translate(160 150) rotate(-140)'/><use href='%23l' transform='translate(200 122) rotate(-100)'/><use href='%23l' transform='translate(112 176) rotate(-160)'/><use href='%23l' transform='translate(216 92) rotate(-75)'/><use href='%23l' transform='translate(222 146) rotate(-50)'/><use href='%23l' transform='translate(80 196) rotate(-170)'/><use href='%23l' transform='translate(176 186) rotate(-20)'/></g><use href='%23f' fill='%23e3b6ff' transform='translate(232 70) scale(0.75)'/><use href='%23d' fill='%23ffffff' transform='translate(226 120) scale(1.25)'/><use href='%23d' fill='%23ffffff' transform='translate(138 134) scale(0.8)'/><use href='%23c' fill='%23ffc2dc' transform='translate(230 182) scale(1.2)'/><use href='%23r' fill='%23ff6fae' transform='translate(186 158) scale(2.3)'/><use href='%23f' fill='%23ff8fc0' transform='translate(140 178) scale(1.4)'/><use href='%23t' fill='%23f06aa8' transform='translate(96 190) scale(1.3)'/><use href='%23c' fill='%23ffffff' transform='translate(172 108) scale(0.8)'/><use href='%23b' fill='%23ff8fc0' transform='translate(60 200) scale(1.2)'/><use href='%23b' fill='%23ffb3d1' transform='translate(114 150) scale(1)'/><g fill='%23ffffff'><use href='%23s' transform='translate(150 100) scale(0.7)'/><use href='%23s' transform='translate(92 150) scale(0.5)'/><use href='%23s' transform='translate(200 46) scale(0.6)'/><use href='%23s' transform='translate(42 190) scale(0.4)'/><use href='%23s' transform='translate(244 150) scale(0.45)'/></g></svg>");
+
+  /* Satin bow with soft highlights. */
+  --pinkly-bow: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-40 -30 80 64'><defs><g id='h'><path fill='%23ff4f9a' d='M-3 3L-17 30L-10 27L-5 33L3 5Z'/><path fill='%23ff6fae' d='M0 0C-10-19-35-25-35-6C-35 11-12 8 0 0Z'/><path fill='%23ff9cc8' d='M-4-2C-12-14-28-18-28-7C-28 3-14 3-4-2Z'/><ellipse cx='-24' cy='-12' rx='5' ry='2.4' fill='%23ffffff' opacity='.7' transform='rotate(-25 -24 -12)'/></g></defs><use href='%23h'/><use href='%23h' transform='scale(-1 1)'/><ellipse rx='6.5' ry='7.5' fill='%23e33d88'/><ellipse cx='-1.8' cy='-2.6' rx='2.4' ry='1.6' fill='%23ffffff' opacity='.65'/></svg>");
+
+  /* Butterfly whose wings flap via SMIL. */
+  --pinkly-butterfly: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-30 -24 60 48'><g><animateTransform attributeName='transform' type='scale' values='1 1;.3 1;1 1' dur='.45s' repeatCount='indefinite'/><path fill='%23ff6fae' d='M0 0C-6-18-27-23-27-8C-27 3-12 4 0 0Z'/><path fill='%23ff6fae' d='M0 0C6-18 27-23 27-8C27 3 12 4 0 0Z'/><path fill='%23ffb3d1' d='M0 0C-4 10-18 19-21 11C-23 4-10 1 0 0Z'/><path fill='%23ffb3d1' d='M0 0C4 10 18 19 21 11C23 4 10 1 0 0Z'/><g fill='%23ffffff' opacity='.85'><circle cx='-16' cy='-10' r='3'/><circle cx='16' cy='-10' r='3'/><circle cx='-12' cy='9' r='1.8'/><circle cx='12' cy='9' r='1.8'/></g></g><rect x='-1.7' y='-10' width='3.4' height='20' rx='1.7' fill='%237a2a55'/><path d='M0-9C-2-15-6-18-8-19M0-9C2-15 6-18 8-19' stroke='%237a2a55' fill='none' stroke-width='1.2' stroke-linecap='round'/></svg>");
+
+  /* Sakura branches for the top corners of the window. */
+  --pinkly-branch: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='100' viewBox='0 0 300 100'><defs><path id='p' d='M0 9C-6 4-7-4-3-9L0-6L3-9C7-4 6 4 0 9Z'/><g id='c'><use href='%23p' transform='rotate(0) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(72) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(144) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(216) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(288) translate(0 -8) scale(.85)'/><circle r='2.6' fill='%23ff5fa2'/></g></defs><path d='M-4 14C60 22 110 14 160 30C200 42 240 36 296 47' fill='none' stroke='%23a0697d' stroke-linecap='round' stroke-width='4.5'/><path d='M70 20C84 34 92 44 110 52M150 28C160 20 170 18 184 18M220 39C228 52 238 62 252 66' fill='none' stroke='%23a0697d' stroke-linecap='round' stroke-width='2.4'/><use href='%23c' fill='%23ffc2dc' transform='translate(36 19) scale(1)'/><use href='%23c' fill='%23ffffff' transform='translate(78 24) scale(0.8)'/><use href='%23c' fill='%23ffb3d1' transform='translate(108 52) scale(1.1)'/><use href='%23c' fill='%23ffffff' transform='translate(154 28) scale(0.9)'/><use href='%23c' fill='%23ffc2dc' transform='translate(184 18) scale(0.8)'/><use href='%23c' fill='%23ffb3d1' transform='translate(218 40) scale(1)'/><use href='%23c' fill='%23ffffff' transform='translate(250 66) scale(1.1)'/><use href='%23c' fill='%23ffc2dc' transform='translate(282 47) scale(0.8)'/><ellipse cx='126' cy='22' rx='2.6' ry='3.6' fill='%23ff8fc0'/><ellipse cx='240' cy='32' rx='2.6' ry='3.6' fill='%23ff8fc0'/><ellipse cx='58' cy='28' rx='2.6' ry='3.6' fill='%23ff8fc0'/><ellipse cx='196' cy='44' rx='2.6' ry='3.6' fill='%23ff8fc0'/></svg>");
+  --pinkly-branch-flip: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='100' viewBox='0 0 300 100'><defs><path id='p' d='M0 9C-6 4-7-4-3-9L0-6L3-9C7-4 6 4 0 9Z'/><g id='c'><use href='%23p' transform='rotate(0) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(72) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(144) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(216) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(288) translate(0 -8) scale(.85)'/><circle r='2.6' fill='%23ff5fa2'/></g></defs><g transform='translate(300 0) scale(-1 1)'><path d='M-4 14C60 22 110 14 160 30C200 42 240 36 296 47' fill='none' stroke='%23a0697d' stroke-linecap='round' stroke-width='4.5'/><path d='M70 20C84 34 92 44 110 52M150 28C160 20 170 18 184 18M220 39C228 52 238 62 252 66' fill='none' stroke='%23a0697d' stroke-linecap='round' stroke-width='2.4'/><use href='%23c' fill='%23ffc2dc' transform='translate(36 19) scale(1)'/><use href='%23c' fill='%23ffffff' transform='translate(78 24) scale(0.8)'/><use href='%23c' fill='%23ffb3d1' transform='translate(108 52) scale(1.1)'/><use href='%23c' fill='%23ffffff' transform='translate(154 28) scale(0.9)'/><use href='%23c' fill='%23ffc2dc' transform='translate(184 18) scale(0.8)'/><use href='%23c' fill='%23ffb3d1' transform='translate(218 40) scale(1)'/><use href='%23c' fill='%23ffffff' transform='translate(250 66) scale(1.1)'/><use href='%23c' fill='%23ffc2dc' transform='translate(282 47) scale(0.8)'/><ellipse cx='126' cy='22' rx='2.6' ry='3.6' fill='%23ff8fc0'/><ellipse cx='240' cy='32' rx='2.6' ry='3.6' fill='%23ff8fc0'/><ellipse cx='58' cy='28' rx='2.6' ry='3.6' fill='%23ff8fc0'/><ellipse cx='196' cy='44' rx='2.6' ry='3.6' fill='%23ff8fc0'/></g></svg>");
+
+  /* Two flower-fall layers; petals sway and tumble via SMIL while CSS moves
+     each layer down by exactly one tile so the loop is seamless. */
+  --pinkly-fall-near: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='340' height='340' viewBox='0 0 340 340'><defs><path id='p' d='M0 9C-6 4-7-4-3-9L0-6L3-9C7-4 6 4 0 9Z'/><g id='c'><use href='%23p' transform='rotate(0) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(72) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(144) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(216) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(288) translate(0 -8) scale(.85)'/><circle r='2.6' fill='%23ff5fa2'/></g></defs><g transform='translate(40 50)' opacity='1'><g><animateTransform attributeName='transform' type='translate' values='0 0;14 0;0 0' dur='4s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='0;360' dur='5.2s' repeatCount='indefinite'/><use href='%23p' fill='%23ffb3d1' transform='scale(1.1)'/></g></g></g><g transform='translate(210 36)' opacity='1'><g><animateTransform attributeName='transform' type='translate' values='0 0;-12 0;0 0' dur='5s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='0;-360' dur='6.5s' repeatCount='indefinite'/><use href='%23c' fill='%23ffc2dc' transform='scale(0.9)'/></g></g></g><g transform='translate(300 150)' opacity='1'><g><animateTransform attributeName='transform' type='translate' values='0 0;16 0;0 0' dur='3.6s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='0;-360' dur='4.7s' repeatCount='indefinite'/><use href='%23p' fill='%23ff8fc0' transform='scale(0.9)'/></g></g></g><g transform='translate(120 200)' opacity='1'><g><animateTransform attributeName='transform' type='translate' values='0 0;-14 0;0 0' dur='4.4s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='0;360' dur='5.7s' repeatCount='indefinite'/><use href='%23p' fill='%23ffffff' transform='scale(1.0)'/></g></g></g><g transform='translate(60 300)' opacity='1'><g><animateTransform attributeName='transform' type='translate' values='0 0;12 0;0 0' dur='5.2s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='0;360' dur='6.8s' repeatCount='indefinite'/><use href='%23c' fill='%23ffffff' transform='scale(0.75)'/></g></g></g><g transform='translate(250 290)' opacity='1'><g><animateTransform attributeName='transform' type='translate' values='0 0;-16 0;0 0' dur='3.8s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='0;-360' dur='4.9s' repeatCount='indefinite'/><use href='%23p' fill='%23ffd3e5' transform='scale(1.2)'/></g></g></g><g transform='translate(180 120)' opacity='1'><g><animateTransform attributeName='transform' type='translate' values='0 0;10 0;0 0' dur='4.8s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='0;360' dur='6.2s' repeatCount='indefinite'/><use href='%23p' fill='%23ff6fae' transform='scale(0.7)'/></g></g></g></svg>");
+  --pinkly-fall-far: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260' viewBox='0 0 260 260'><defs><path id='p' d='M0 9C-6 4-7-4-3-9L0-6L3-9C7-4 6 4 0 9Z'/><g id='c'><use href='%23p' transform='rotate(0) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(72) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(144) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(216) translate(0 -8) scale(.85)'/><use href='%23p' transform='rotate(288) translate(0 -8) scale(.85)'/><circle r='2.6' fill='%23ff5fa2'/></g></defs><g transform='translate(30 40)' opacity='0.7'><g><animateTransform attributeName='transform' type='translate' values='0 0;8 0;0 0' dur='5s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='0;360' dur='6.5s' repeatCount='indefinite'/><use href='%23p' fill='%23ffc2dc' transform='scale(0.6)'/></g></g></g><g transform='translate(170 90)' opacity='0.7'><g><animateTransform attributeName='transform' type='translate' values='0 0;-8 0;0 0' dur='5.6s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='0;-360' dur='7.3s' repeatCount='indefinite'/><use href='%23p' fill='%23ffffff' transform='scale(0.55)'/></g></g></g><g transform='translate(90 190)' opacity='0.7'><g><animateTransform attributeName='transform' type='translate' values='0 0;8 0;0 0' dur='6s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='0;360' dur='7.8s' repeatCount='indefinite'/><use href='%23c' fill='%23ffb3d1' transform='scale(0.5)'/></g></g></g><g transform='translate(230 220)' opacity='0.7'><g><animateTransform attributeName='transform' type='translate' values='0 0;8 0;0 0' dur='4.6s' repeatCount='indefinite'/><g><animateTransform attributeName='transform' type='rotate' values='0;-360' dur='6.0s' repeatCount='indefinite'/><use href='%23p' fill='%23ff8fc0' transform='scale(0.5)'/></g></g></g></svg>");
+  --pinkly-flowerfall-opacity: 0.9; /* Set to 0 to hide the flower-fall. */
+
+  /* Ribbon-like satin stripes for progress fills. */
+  --pinkly-ribbon: repeating-linear-gradient(
+    -45deg,
+    var(--pinkly-hot) 0 6px,
+    var(--pinkly-candy) 6px 12px
+  );
+}
+
+/* ---------- Glittery backdrop between panels ---------- */
+
+body,
+.Root__top-container {
+  background-color: var(--spice-main);
+  background-image:
+    var(--pinkly-branch), var(--pinkly-branch-flip), var(--pinkly-sparkles),
+    linear-gradient(
+      135deg,
+      var(--spice-backdrop-start) 0%,
+      var(--spice-backdrop-mid) 45%,
+      var(--spice-backdrop-end) 100%
+    );
+  background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+  background-position:
+    left top,
+    right top,
+    0 0,
+    0 0;
+  background-size:
+    300px 100px,
+    300px 100px,
+    160px 160px,
+    100% 100%;
+}
+
+/* Let the glitter and sakura branches show behind the top navigation. */
+.Root__globalNav {
+  background: transparent;
+}
+
+/* ---------- Flower-fall over the whole window ---------- */
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  opacity: var(--pinkly-flowerfall-opacity);
+  pointer-events: none;
+  will-change: transform;
+}
+
+body::before {
+  top: -340px;
+  bottom: 0;
+  background: var(--pinkly-fall-near) 0 0 / 340px 340px;
+  animation: pinkly-fall-near 9s linear infinite;
+}
+
+body::after {
+  top: -260px;
+  bottom: 0;
+  background: var(--pinkly-fall-far) 90px 40px / 260px 260px;
+  animation: pinkly-fall-far 12s linear infinite;
+}
+
+@keyframes pinkly-fall-near {
+  to {
+    transform: translateY(340px);
+  }
+}
+
+@keyframes pinkly-fall-far {
+  to {
+    transform: translateY(260px);
+  }
+}
+
+::selection {
+  background: rgba(255, 79, 154, 0.3);
+}
+
+/* ---------- Rounded, glowing panels ---------- */
+
+.Root__main-view,
+.Root__nav-bar,
+.Root__right-sidebar {
+  border-radius: var(--pinkly-panel-radius);
+  box-shadow: var(--pinkly-glow);
+}
+
+.Root__main-view {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--spice-main);
+  background-image:
+    var(--pinkly-bouquet),
+    linear-gradient(
+      180deg,
+      var(--spice-main-top) 0%,
+      var(--spice-main) 60%,
+      var(--spice-main-bottom) 100%
+    );
+  background-repeat: no-repeat;
+  background-position:
+    right 10px bottom 8px,
+    0 0;
+  background-size:
+    260px 220px,
+    100% 100%;
+}
+
+/* Let the bouquet show through the scroll container. */
+.Root__main-view .main-view-container,
+.Root__main-view .main-view-container__scroll-node,
+.Root__main-view .main-view-container__scroll-node-child {
+  background-color: transparent;
+}
+
+/* Bow sticker on the main panel's corner. */
+.Root__main-view::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: 14px;
+  z-index: 3;
+  width: 58px;
+  height: 46px;
+  background: var(--pinkly-bow) center / contain no-repeat;
+  filter: drop-shadow(0 3px 4px rgba(200, 50, 120, 0.3));
+  transform: rotate(12deg);
+  pointer-events: none;
+}
+
+/* A butterfly that drifts around the main view. */
+.Root__main-view::after {
+  content: "";
+  position: absolute;
+  top: 18%;
+  left: 8%;
+  z-index: 3;
+  width: 38px;
+  height: 30px;
+  background: var(--pinkly-butterfly) center / contain no-repeat;
+  filter: drop-shadow(0 2px 3px rgba(200, 50, 120, 0.25));
+  pointer-events: none;
+  animation: pinkly-flutter 28s ease-in-out infinite;
+}
+
+@keyframes pinkly-flutter {
+  0% {
+    transform: translate(0, 0) rotate(-8deg);
+  }
+  20% {
+    transform: translate(32vw, -6vh) rotate(10deg);
+  }
+  40% {
+    transform: translate(52vw, 22vh) rotate(-4deg);
+  }
+  60% {
+    transform: translate(26vw, 46vh) rotate(-16deg);
+  }
+  80% {
+    transform: translate(-2vw, 30vh) rotate(6deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(-8deg);
+  }
+}
+
+/* Library sidebar: flowers growing up from the bottom, second butterfly. */
+.Root__nav-bar {
+  position: relative;
+  background-color: var(--spice-sidebar);
+  background-image: var(--pinkly-bouquet);
+  background-repeat: no-repeat;
+  background-position: right 6px bottom 6px;
+  background-size: 200px 169px;
+}
+
+.Root__nav-bar > nav,
+.Root__nav-bar .main-yourLibraryX-libraryContainer,
+.Root__nav-bar .main-yourLibraryX-library {
+  background-color: transparent;
+}
+
+.Root__nav-bar::after {
+  content: "";
+  position: absolute;
+  right: 18px;
+  bottom: 120px;
+  z-index: 3;
+  width: 30px;
+  height: 24px;
+  background: var(--pinkly-butterfly) center / contain no-repeat;
+  pointer-events: none;
+  animation: pinkly-hover 6s ease-in-out infinite;
+}
+
+@keyframes pinkly-hover {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(10deg);
+  }
+  50% {
+    transform: translate(-14px, -22px) rotate(-6deg);
+  }
+}
+
+/* ---------- Now playing bar: pink satin with a shine sweep ---------- */
+
+.Root__now-playing-bar {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--pinkly-panel-radius) var(--pinkly-panel-radius) 0 0;
+  background: linear-gradient(
+    90deg,
+    var(--spice-backdrop-start),
+    var(--spice-backdrop-mid) 50%,
+    var(--spice-backdrop-end)
+  );
+  border-top: 2px solid rgba(255, 79, 154, 0.35);
+}
+
+.Root__now-playing-bar .main-nowPlayingBar-nowPlayingBar,
+.Root__now-playing-bar footer {
+  background: transparent;
+}
+
+.Root__now-playing-bar::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    100deg,
+    transparent 30%,
+    rgba(var(--spice-rgb-shine), 0.55) 48%,
+    transparent 66%
+  );
+  transform: translateX(-100%);
+  pointer-events: none;
+  animation: pinkly-shine 7s ease-in-out infinite;
+}
+
+@keyframes pinkly-shine {
+  0%,
+  65% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Glossy play button with a twinkling sparkle. */
+[data-testid="control-button-playpause"],
+.main-playButton-PlayButton button,
+.main-playButton-PlayButton > span {
+  position: relative;
+  box-shadow:
+    0 0 0 3px rgba(var(--spice-rgb-shine), 0.85),
+    0 6px 18px rgba(255, 79, 154, 0.55);
+  border-radius: 50%;
+}
+
+/* Encore paints the visible circle on the inner span. */
+[data-testid="control-button-playpause"] [class*="button-primary__inner"] {
+  background: radial-gradient(
+    circle at 35% 30%,
+    #ffffff 0 8%,
+    var(--pinkly-candy) 30%,
+    var(--pinkly-hot) 75%
+  );
+  color: #ffffff;
+}
+
+[data-testid="control-button-playpause"] svg {
+  fill: #ffffff;
+}
+
+[data-testid="control-button-playpause"]::after {
+  content: "✦";
+  position: absolute;
+  top: -10px;
+  right: -8px;
+  color: var(--pinkly-hot);
+  font-size: 13px;
+  line-height: 1;
+  text-shadow: 0 0 6px var(--spice-shine);
+  pointer-events: none;
+  animation: pinkly-twinkle 2.4s ease-in-out infinite;
+}
+
+@keyframes pinkly-twinkle {
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: scale(0.6) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.15) rotate(45deg);
+  }
+}
+
+/* Ribbon progress and volume bars with bow-shaped handles. */
+.x-progressBar-progressBarBg {
+  --bg-color: rgba(255, 79, 154, 0.2) !important;
+  border-radius: 999px;
+}
+
+.x-progressBar-fillColor {
+  background: var(--pinkly-ribbon) !important;
+  border-radius: 999px;
+}
+
+.progress-bar__slider {
+  width: 26px !important;
+  height: 21px !important;
+  margin-left: -13px;
+  background: var(--pinkly-bow) center / contain no-repeat !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  filter: drop-shadow(0 1px 2px rgba(200, 50, 120, 0.35));
+}
+
+/* ---------- Cards, rows and menus ---------- */
+
+.main-card-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  background: linear-gradient(
+    160deg,
+    var(--spice-card-top) 0%,
+    var(--spice-card) 100%
+  );
+  box-shadow: 0 0 0 1px rgba(255, 79, 154, 0.12);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.main-card-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--pinkly-glow);
+}
+
+.main-card-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    115deg,
+    transparent 35%,
+    rgba(var(--spice-rgb-shine), 0.5) 50%,
+    transparent 65%
+  );
+  transform: translateX(-120%);
+  pointer-events: none;
+}
+
+.main-card-card:hover::after {
+  transform: translateX(120%);
+  transition: transform 0.8s ease;
+}
+
+.main-card-imageContainer img,
+.main-cardImage-image {
+  border-radius: 14px;
+}
+
+.main-trackList-trackListRow {
+  border-radius: 12px;
+}
+
+.main-trackList-trackListRow:hover {
+  background-color: rgba(255, 79, 154, 0.1);
+}
+
+.main-trackList-trackListRow[aria-selected="true"] {
+  box-shadow: inset 4px 0 0 var(--pinkly-hot);
+}
+
+.main-contextMenu-menu {
+  background-color: var(--spice-main-elevated);
+  border: 1px solid rgba(255, 79, 154, 0.25);
+  border-radius: var(--pinkly-control-radius);
+  box-shadow: var(--pinkly-glow);
+}
+
+/* Spotify fades the now-playing title with a dark scrim; use a pink one. */
+.main-nowPlayingView-contextItemInfo::before {
+  background: linear-gradient(
+    transparent 0%,
+    rgba(var(--spice-rgb-main), 0.75) 25%,
+    var(--spice-main) 89%
+  ) !important;
+}
+
+/* Headings get a soft pink glow. */
+.main-entityHeader-title,
+.main-shelf-title {
+  text-shadow: 0 0 14px rgba(255, 143, 192, 0.45);
+}
+
+/* ---------- Scrollbars and focus ---------- */
+
+.os-scrollbar-handle,
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    var(--pinkly-candy),
+    var(--pinkly-hot)
+  ) !important;
+  border-radius: 999px;
+}
+
+button:focus-visible,
+a:focus-visible,
+[tabindex="0"]:focus-visible {
+  outline: 2px solid var(--spice-button);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::before,
+  body::after {
+    display: none;
+  }
+
+  .Root__main-view::after,
+  .Root__nav-bar::after,
+  .Root__now-playing-bar::after,
+  [data-testid="control-button-playpause"]::after {
+    animation: none;
+  }
+
+  .main-card-card,
+  .main-card-card::after {
+    transition: none;
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "pinkly",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Spicetify theme development workspace",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "setup": "node scripts/spicetify.mjs setup",
+    "theme:link": "node scripts/spicetify.mjs link",
+    "dev": "node scripts/spicetify.mjs dev",
+    "apply": "node scripts/spicetify.mjs apply",
+    "doctor": "node scripts/spicetify.mjs doctor",
+    "spicetify": "node scripts/spicetify.mjs cli",
+    "desktop:up": "node scripts/desktop.mjs up",
+    "desktop:down": "node scripts/desktop.mjs down",
+    "desktop:logs": "node scripts/desktop.mjs logs",
+    "desktop:status": "node scripts/desktop.mjs status",
+    "desktop:shell": "node scripts/desktop.mjs shell",
+    "format": "prettier --write .",
+    "check": "prettier --check . && node --check scripts/spicetify.mjs && node --check scripts/desktop.mjs"
+  },
+  "devDependencies": {
+    "prettier": "3.9.10"
+  }
+}

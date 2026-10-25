@@ -1,0 +1,10 @@
+{
+  "name": "Pinkly",
+  "description": "Pastel-pink girly theme with flowers, satin bows, butterflies, sakura flower-fall and lots of shine. Includes light and dark schemes.",
+  "preview": "assets/preview.png",
+  "readme": "README.md",
+  "usercss": "user.css",
+  "schemes": "color.ini",
+  "authors": [{ "name": "misikovich", "url": "https://github.com/misikovich" }],
+  "tags": ["pink", "cute", "light", "dark", "animated"]
+}

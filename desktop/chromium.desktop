@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Browser
+Exec=/usr/local/bin/pinkly-browser %U
+Terminal=false
+Type=Application
+MimeType=text/html;x-scheme-handler/http;x-scheme-handler/https;

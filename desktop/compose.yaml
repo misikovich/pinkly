@@ -1,0 +1,29 @@
+name: pinkly-desktop
+
+services:
+  desktop:
+    platform: linux/amd64
+    build: .
+    init: true
+    shm_size: 1gb
+    ports:
+      - "127.0.0.1:${PINKLY_DESKTOP_PORT:-6080}:6080"
+    environment:
+      PINKLY_COLOR_SCHEME: ${PINKLY_COLOR_SCHEME:-Pinkly}
+    volumes:
+      - ..:/workspace/pinkly:ro
+      - profile:/home/theme
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - >-
+          curl -fsS http://127.0.0.1:6080/vnc.html >/dev/null &&
+          curl -fsS http://127.0.0.1:9222/json/version >/dev/null &&
+          pgrep -x xfce4-session >/dev/null && pgrep -x spicetify >/dev/null
+      interval: 10s
+      timeout: 3s
+      retries: 6
+      start_period: 30s
+
+volumes:
+  profile:
